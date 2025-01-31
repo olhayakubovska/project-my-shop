@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  color: white;
+}
+
+input {
+  width: 160px;
+  height: 20px;
+  margin: 10px;
+}
+
+.edit {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .btn {
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 78px;
+  height: 32px;
+  font-size: 18px;
+  margin: 0 0 0 5px;
+} */
+
+.newProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 300px;
+}
+.text {
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+
+}

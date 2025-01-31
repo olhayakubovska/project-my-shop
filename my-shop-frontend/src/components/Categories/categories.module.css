@@ -1,0 +1,8 @@
+.categoriesContainer {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Наследует цвет текста от родителя */
+}

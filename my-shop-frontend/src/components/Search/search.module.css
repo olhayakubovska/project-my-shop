@@ -1,0 +1,20 @@
+.searchSection {
+  width: 100%;
+  padding: 16px 0;
+}
+.search {
+  position: relative;
+}
+.searchInput {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.searchIcon {
+  right: 12px;
+  top: 2px;
+  position: absolute;
+  font-size: 22px;
+}

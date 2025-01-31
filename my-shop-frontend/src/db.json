@@ -1,0 +1,609 @@
+{
+  "users": [
+    {
+      "login": "ola",
+      "password": "1111",
+      "roleId": 0,
+      "id": "1"
+    },
+    {
+      "login": "ola2",
+      "password": "1111",
+      "roleId": 2,
+      "id": "2"
+    }
+  ],
+  "roles": [
+    {
+      "id": "0",
+      "name": "Администратор"
+    },
+    {
+      "id": "1",
+      "name": "Модератор"
+    },
+    {
+      "id": "2",
+      "name": "Читатель"
+    },
+    {
+      "id": "3",
+      "name": "Гость"
+    }
+  ],
+  "categories": [
+    {
+      "id": "001",
+      "category": "Обувь"
+    },
+    {
+      "id": "002",
+      "category": "Женские свитера"
+    },
+    {
+      "id": "003",
+      "category": "Мужская одежда"
+    },
+    {
+      "id": "004",
+      "category": "Детская одежда"
+    },
+    {
+      "id": "005",
+      "category": "Юбки"
+    },
+    {
+      "id": "006",
+      "category": "Платья"
+    },
+    {
+      "id": "007",
+      "category": "Штаны"
+    },
+    {
+      "id": "008",
+      "category": "Футболки"
+    }
+  ],
+  "sessions": [
+    {
+      "user": {
+        "login": "ola",
+        "password": "1111",
+        "roleId": 0,
+        "id": 1
+      },
+      "hash": "0.76878407157907480140579536964651197195053100585938",
+      "id": "1"
+    },
+    {
+      "user": {
+        "login": "ola",
+        "password": "1111",
+        "roleId": 0,
+        "id": 1
+      },
+      "hash": "0.69944918919776277732580638257786631584167480468750",
+      "id": "2"
+    },
+    {
+      "user": {
+        "login": "ola",
+        "password": "1111",
+        "roleId": 0,
+        "id": 1
+      },
+      "hash": "0.00372314174416144005874684808077290654182434082031",
+      "id": "3"
+    },
+    {
+      "user": {
+        "login": "ola",
+        "password": "1111",
+        "roleId": 0,
+        "id": 1
+      },
+      "hash": "0.02457923552621932294925954920472577214241027832031",
+      "id": "4"
+    },
+    {
+      "user": {
+        "login": "ola",
+        "password": "1111",
+        "roleId": 0,
+        "id": 1
+      },
+      "hash": "0.06783422041158448934083935455419123172760009765625",
+      "id": "5"
+    },
+    {
+      "id": "fb45",
+      "user": {
+        "login": "ola",
+        "password": "1111",
+        "roleId": 0,
+        "id": "1"
+      },
+      "hash": "0.49994909128143150134349070867756381630897521972656"
+    }
+  ],
+  "categoryToProduct": [
+    {
+      "categoryId": "003",
+      "productId": "Cf0_6ov",
+      "id": "8"
+    },
+    {
+      "categoryId": "003",
+      "productId": "hJxIYRl",
+      "id": "9"
+    },
+    {
+      "categoryId": "003",
+      "productId": "b3U-q3h",
+      "id": "10"
+    },
+    {
+      "categoryId": "003",
+      "productId": "hmtSGSp",
+      "id": "11"
+    },
+    {
+      "categoryId": "003",
+      "productId": "TQhKTC4",
+      "id": "12"
+    },
+    {
+      "categoryId": "002",
+      "productId": "xCQVrFX",
+      "id": "13"
+    },
+    {
+      "categoryId": "002",
+      "productId": "f1qpZyj",
+      "id": "15"
+    },
+    {
+      "categoryId": "003",
+      "productId": "J0u04kk",
+      "id": "16"
+    },
+    {
+      "categoryId": "002",
+      "productId": "OSfOOUm",
+      "id": "17"
+    },
+    {
+      "categoryId": "002",
+      "productId": "IdrOLuq",
+      "id": "18"
+    },
+    {
+      "categoryId": "002",
+      "productId": "sXG2W3u",
+      "id": "19"
+    },
+    {
+      "categoryId": "001",
+      "productId": "T5XjtZ5",
+      "id": "20"
+    },
+    {
+      "categoryId": "001",
+      "productId": "EWTptxa",
+      "id": "21"
+    },
+    {
+      "categoryId": "001",
+      "productId": "ZX7E3xB",
+      "id": "22"
+    },
+    {
+      "categoryId": "001",
+      "productId": "4DeXEtZ",
+      "id": "23"
+    },
+    {
+      "categoryId": "004",
+      "productId": "17FBU5E",
+      "id": "24"
+    },
+    {
+      "categoryId": "004",
+      "productId": "o9XLuIG",
+      "id": "25"
+    },
+    {
+      "categoryId": "004",
+      "productId": "xjUO24G",
+      "id": "26"
+    },
+    {
+      "categoryId": "004",
+      "productId": "tA5Yypa",
+      "id": "27"
+    },
+    {
+      "categoryId": "002",
+      "productId": "to2B-Jq",
+      "id": "28"
+    },
+    {
+      "categoryId": "002",
+      "productId": "x6eOuZd",
+      "id": "29"
+    },
+    {
+      "categoryId": "002",
+      "productId": "QCf-1V_",
+      "id": "30"
+    },
+    {
+      "categoryId": "005",
+      "productId": "WmcqZrC",
+      "id": "6Arf1ym"
+    },
+    {
+      "categoryId": "005",
+      "productId": "2t2n0BX",
+      "id": "0ktzIhY"
+    },
+    {
+      "categoryId": "005",
+      "productId": "UVJ99Bo",
+      "id": "ZSB5I-N"
+    },
+    {
+      "categoryId": "005",
+      "productId": "FoiAYyk",
+      "id": "VYhebKQ"
+    },
+    {
+      "categoryId": "006",
+      "productId": "zZInPxW",
+      "id": "R0WiotT"
+    },
+    {
+      "categoryId": "007",
+      "productId": "Emp7J5y",
+      "id": "r51QuxX"
+    },
+    {
+      "categoryId": "007",
+      "productId": "P1ZYnIS",
+      "id": "6KymR8A"
+    },
+    {
+      "categoryId": "007",
+      "productId": "gs8XQcX",
+      "id": "smvygRL"
+    },
+    {
+      "categoryId": "007",
+      "productId": "CNL3uZm",
+      "id": "wlV3x-c"
+    },
+    {
+      "categoryId": "008",
+      "productId": "RI1rLSf",
+      "id": "ITGCbXe"
+    },
+    {
+      "categoryId": "008",
+      "productId": "uDPIAet",
+      "id": "JalkAaU"
+    },
+    {
+      "categoryId": "008",
+      "productId": "7ztnm85",
+      "id": "2OmBZ1N"
+    },
+    {
+      "categoryId": "008",
+      "productId": "gEvVNyd",
+      "id": "yfRX1sa"
+    }
+  ],
+  "products": [
+    {
+      "name": "Men's Hoodies 1 & Sweatshirts",
+      "image": "https://img.kwcdn.com/product/fancy/96df86ad-a2e4-4caa-905e-71f3957beef3.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "250",
+      "categoryId": "003",
+      "description": "Men's Mountain Embroidery Graphic Print Sweatshirt, Casual Half Zipper Stand Collar Long Sleeve Top For Outdoor",
+      "id": "Cf0_6ov"
+    },
+    {
+      "name": "Men's sweater",
+      "image": "https://img.kwcdn.com/product/fancy/2b0a51c7-7c38-46dc-8dc6-dc0ea7544c20.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "130",
+      "categoryId": "003",
+      "description": "Men's Script Letter Print Fleece Sweatshirt, Warm And Thick Crew Neck And Long Sleeve Top For Winter And Fall",
+      "id": "hJxIYRl"
+    },
+    {
+      "name": " Men's Sweatshirts",
+      "image": "https://img.kwcdn.com/product/fancy/4ce1d322-222f-45c5-b1cc-24f572cdc5eb.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "120",
+      "categoryId": "003",
+      "description": "Men's Casual Fleece-Lined Quarter Zip Stand Collar Sweatshirt, Cozy Cotton Blend Winter Pullover Shirt",
+      "id": "b3U-q3h"
+    },
+    {
+      "name": "Men's Hoodies ",
+      "image": "https://img.kwcdn.com/product/fancy/8fd4bce0-554c-42e3-be04-b55ad1c35ffe.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "230",
+      "categoryId": "003",
+      "description": " Model is wearing: M(48) Fit: True to size Height: 181 cmBust: 104 cmWaist: 80 cmHips: 95 cm 61 reviews 4,9 All reviews are from verified purchases Item reviews (61) Provider reviews (2 133) 0% Small 98% True to size 2% Large avatar sa***58 in  on Sep 10, 2024 Cool jacket I advise everyone, the quality is excellent at your level 🫶🏻 See more avatar ta***os in  on Sep 19, 2024 Good quality, right size See more avatar Atnjsr Boncoin in  on Sep 28, 2024 Purchased 2 times Consistent with description See more Jingkang Jingkang 318 Followers 54K+ Sold 4.8 Details Save Report this item Material: Polyester Composition: 100% Polyester Details: Zipper Design See more mens   knitted     long   lapel half   top for     details 0mens   knitted     long   lapel half   top for     details 0 mens   knitted     long   lapel half   top for     details 1mens   knitted     long   lapel half   top for     details 1 mens   knitted     long   lapel half   top for     details 2mens   knitted     long   lapel half   top for     details 2 mens   knitted     long   lapel half   top for     details 3mens   knitted     long   lapel half   top for     details 3 mens   knitted     long   lapel half   top for     details 4mens   knitted     long   lapel half   top for     details 4 mens   knitted     long   lapel half   top for     details 5mens   knitted     long   lapel half   top for     details 5 mens   knitted     long   lapel half   top for     details 6mens   knitted     long   lapel half   top for     details 6 mens   knitted     long   lapel half   top for     details 7mens   knitted     long   lapel half   top for     details 7 mens   knitted     long   lapel half   top for     details 8mens   knitted     long   lapel half   top for     details 8 mens   knitted     long   lapel half   top for     details 9mens   knitted     long   lapel half   top for     details 9 mens   knitted     long   lapel half   top for     details 10mens   knitted     long   lapel half   top for     details 10    Free shipping on all orders Amazing offer Men's Solid Knitted Sweater, Casual Long Sleeve Lapel Half Zipper Top For Winter Fall",
+      "id": "hmtSGSp"
+    },
+    {
+      "name": "Men's Underwear ",
+      "image": "https://img.kwcdn.com/product/fancy/d58f50b5-b27f-45bf-9cc9-7028f4979787.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "123",
+      "categoryId": "003",
+      "description": "New 2024 Men's Round Neck Knitted Sweater Pullover, Men's Warm Top For Autumn And Winter.",
+      "id": "TQhKTC4"
+    },
+    {
+      "name": " Women's Sweatshirts",
+      "image": "https://img.kwcdn.com/product/fancy/market/3dc07905ed4dcb3d981841b00c41d8a3_FngehhI5Oe5gv.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "120",
+      "categoryId": "002",
+      "description": "Solid Zip Front Plush Pullover Sweatshirt, Casual Long Sleeve Sweatshirt, Women's Clothing",
+      "id": "xCQVrFX"
+    },
+    {
+      "name": "Woman Dress",
+      "image": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/7a90fd8b667b00ee139eb017a9a7b891.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "212",
+      "categoryId": "002",
+      "description": "Solid Crew Neck Pullover Sweater, Casual Long Sleeve Drop Shoulder Split Sweater, Women's Clothing",
+      "id": "f1qpZyj"
+    },
+    {
+      "name": "Long ",
+      "image": "https://img.kwcdn.com/product/open/2024-08-17/1723877249229-200f087ddf6e44ad80e5fc6bef9b4431-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+      "price": "100",
+      "categoryId": "003",
+      "description": "Men's Fall/Winter Casual Solid Color Long Sleeve Knit Pullover Sweater with High Neck Collar",
+      "id": "J0u04kk"
+    },
+    {
+      "name": "Women's Coat ",
+      "image": "https://img.kwcdn.com/product/fancy/82ccadf5-7948-40e9-a805-407258730f03.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "200",
+      "categoryId": "002",
+      "description": "Plaid Button Front Teddy Coat, Casual Flap Pocket Long Sleeve Coat For Fall & Winter, Women's Clothing",
+      "id": "OSfOOUm"
+    },
+    {
+      "name": "Women's Sweaters",
+      "image": "https://img.kwcdn.com/product/fancy/c2285c3e-dbb8-4027-b578-ebd730199b17.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "230",
+      "categoryId": "002",
+      "description": "Drop Shoulder Zip Up V Neck Sweater, Elegant Long Sleeve Sweater For Fall & Winter, Women's Clothing",
+      "id": "IdrOLuq"
+    },
+    {
+      "name": " Women's Sweaters",
+      "image": "https://img.kwcdn.com/product/fancy/24703db5-ddc7-458d-b7d2-d336e821d014.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "240",
+      "categoryId": "002",
+      "description": "Drop Shoulder Open Front Cardigan, Y2K Casual Long Sleeve Solid Color Cardigan For Fall & Winter, Women's Clothing",
+      "id": "sXG2W3u"
+    },
+    {
+      "name": "WOmen Shoes",
+      "image": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/58c708e10c3e9428803cccddf15196a4.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "120",
+      "categoryId": "001",
+      "description": "Women's Trendy Skate Shoes, Colorblock Low Top Flat Sneakers, All-Match Fashion Outdoor Trainers",
+      "id": "T5XjtZ5"
+    },
+    {
+      "name": "Womens Shoes",
+      "image": "https://img.kwcdn.com/product/fancy/2f33dd76-c377-4b27-83b4-67e21c628962.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "235",
+      "categoryId": "001",
+      "description": "Women's Platform Sneakers, Casual Lace Up Outdoor Shoes, Comfortable Low Top Sport Shoes",
+      "id": "EWTptxa"
+    },
+    {
+      "name": "Mens Shoes",
+      "image": "https://img.kwcdn.com/product/1e23313ef0/dcf2dbe8-66a4-4c95-8647-d42444ca2c59_800x800.jpeg?imageView2/2/w/800/q/70/format/webp",
+      "price": "245",
+      "categoryId": "001",
+      "description": "Men's Color Block Trendy Skate Shoes, Wear-resistant Non-Slip Sneakers, Men's Footwear",
+      "id": "ZX7E3xB"
+    },
+    {
+      "name": "Womens Shoes",
+      "image": "https://img.kwcdn.com/product/fancy/26677adc-e3b2-40d1-8253-37c7876dd555.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "125",
+      "categoryId": "001",
+      "description": "RENBEN Women's Fashion Skateboarding Shoes Thick Sole Casual Couples Shoes Trendy Color ",
+      "id": "4DeXEtZ"
+    },
+    {
+      "name": "Kids hoodies",
+      "image": "https://img.kwcdn.com/product/fancy/b6af7386-6a56-49f6-a83c-a15363aa9d0f.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "80",
+      "categoryId": "004",
+      "description": "Alphabet LA Pattern Girl's Varsity Jacket, Raglan Color Block Thermal Lined Preppy Jacket Spring/ Fall Outerwear",
+      "id": "17FBU5E"
+    },
+    {
+      "name": "Boys' Tops",
+      "image": "https://img.kwcdn.com/product/fancy/eb168e93-eb3a-44f2-8717-6188a1c20133.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "170",
+      "categoryId": "004",
+      "description": "Boys' Cartoon Animal Print Hoodie - Casual & Sporty, Loose Fit Pullover for Spring/Fall, Machine Washable",
+      "id": "o9XLuIG"
+    },
+    {
+      "name": "Kids",
+      "image": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/78f0e5779ed9272d9532e93f7fc02181.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "120",
+      "categoryId": "004",
+      "description": "2PCS Girls Splicing Bear Graphic Plaid Outfits Comfy Sets For Spring Summer Fall Outdoor Gift",
+      "id": "xjUO24G"
+    },
+    {
+      "name": "Kids",
+      "image": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/56442ecfbface6f081564bbd5ba59bef.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "130",
+      "categoryId": "004",
+      "description": "Girls' Cute 2pcs Sets, Bear Print Tank Top & Shorts, Fleece Sets Kids Clothes For Toddler Girls Fall Gift Party",
+      "id": "tA5Yypa"
+    },
+    {
+      "name": "Dress",
+      "image": "https://img.kwcdn.com/product/fancy/dac43c0a-7f71-4959-a180-375d95258aac.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "111",
+      "categoryId": "006",
+      "description": "Sweetheart Neck Tie Strap Cami Dress, Elegant Solid Chest Ruched Backless A-line Above Knee Dress, Women's Clothing",
+      "id": "to2B-Jq"
+    },
+    {
+      "name": "Black Dress ",
+      "image": "https://img.kwcdn.com/product/fancy/market/task21/9df56473a8f9af7a0aa0c6651ef6a070_1712733782470.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "200",
+      "categoryId": "006",
+      "description": "Ruched Solid Dress, Elegant Long Sleeve Bodycon Party Dress, Women's Clothing For Party Dressing",
+      "id": "x6eOuZd"
+    },
+    {
+      "name": "Woman Black Dress",
+      "image": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/3a2771ded2c3ba1e25e2ef18e2143fc1.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "300",
+      "categoryId": "006",
+      "description": "Square Neck Ribbed Knit Dress, Elegant Solid Ruffle Trim Aline Ruched Dress, Women's Clothing",
+      "id": "QCf-1V_"
+    },
+    {
+      "name": "Mini Skirt",
+      "image": "https://img.kwcdn.com/product/fancy/7b226e89-f2c2-4782-a3dc-caffbf4c9844.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "110",
+      "categoryId": "005",
+      "description": "Solid Heart Button Front Flared Skirt, Elegant Flared Zipper Mini Skirt, Women's Clothing",
+      "id": "WmcqZrC"
+    },
+    {
+      "name": "Skirt for summer",
+      "image": "https://img.kwcdn.com/product/fancy/a5074e29-af97-405f-a182-85d9a91f836a.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "200",
+      "categoryId": "005",
+      "description": "Solid Elastic Waist Pleated Skirt, Elegant Skateboard Comfy Skirt For Spring & Summer, Women's Clothing",
+      "id": "2t2n0BX"
+    },
+    {
+      "name": "Skirt",
+      "image": "https://img.kwcdn.com/product/fancy/5d7585e0-38c5-42ab-8ac7-077d855b6b1f.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "235",
+      "categoryId": "005",
+      "description": "Elegant Solid Color Button-Detail Suspender Skirt for Women - Polyester, Machine Washable",
+      "id": "UVJ99Bo"
+    },
+    {
+      "name": "Mini Skirt For Spring",
+      "image": "https://img.kwcdn.com/product/fancy/94b25aef-7e04-40b2-96de-12d042e798be.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "200",
+      "categoryId": "005",
+      "description": "482 reviews 4,8 All reviews are from verified purchases Item reviews (482) Provider reviews (3 968) Small True to size Large 3 % 91 % 6 % avatar Marlena Przytuła in  on Aug 21, 2024 It's great, the material is good",
+      "id": "FoiAYyk"
+    },
+    {
+      "name": "Dress ",
+      "image": "https://img.kwcdn.com/product/fancy/805af22a-45db-4d1e-b805-e76eff10352f.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "100",
+      "categoryId": "006",
+      "description": "4 reviews 5,0 All reviews are from verified purchases Item reviews (4) Provider reviews (631) Small True to size Large 0 % 75 % 25 % avatar 55***16 in  on Nov 11, 2024 avatar 魅力的なキラールック ",
+      "id": "zZInPxW"
+    },
+    {
+      "name": "Women's Casual Sports Trousers",
+      "image": "https://img.kwcdn.com/product/fancy/ebe4d7ba-43ba-45b9-a5f1-6d2f7f021137.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "230",
+      "categoryId": "007",
+      "description": "Women's Casual Sports Trousers, Flare Pants, Solid Color, For Fitness And Workout, Women's Activewear",
+      "id": "Emp7J5y"
+    },
+    {
+      "name": "Solid Color Drawstring Jogger Pants",
+      "image": "https://img.kwcdn.com/product/fancy/562c8d25-429f-4c46-883d-b20d4909e483.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "200",
+      "categoryId": "007",
+      "description": "Solid Color Drawstring Jogger Pants, Casual Baggy Sporty Pants, Women's Clothing",
+      "id": "P1ZYnIS"
+    },
+    {
+      "name": "Vintage Wide Leg Jeans",
+      "image": "https://img.kwcdn.com/product/fancy/ab2415c8-c1f2-422b-84c1-6bebe4921172.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "240",
+      "categoryId": "007",
+      "description": "1 488 reviews 4,6 All reviews are from verified purchases Item reviews (1 488) Provider reviews (2 136) Small True to size Large 13 % 83 % 4 % avatar lenus in  on May 31, 2024 Purchased 2 times One of the best jeans I've ever had, they're really soft, nice and good at the waist",
+      "id": "gs8XQcX"
+    },
+    {
+      "name": " Vintage Washed Denim Jeans",
+      "image": "https://img.kwcdn.com/product/fancy/40e68eac-d486-4551-b50f-4e0f45d4fe2c.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "250",
+      "categoryId": "007",
+      "description": " Vintage Washed Denim Jeans for Adults - Solid Color, Woven Cotton Blend, Non-Stretch, Regular Fit, All-Season Comfort  Model is wearing: M Fit: True to size Height: 186 cmBust: 126 cmWaist: 84 cmHips: 107 cm 1 review 4,0 All reviews are from verified purchases Item reviews (1) Provider reviews (1 814) ",
+      "id": "CNL3uZm"
+    },
+    {
+      "name": "Cat Print Crew Neck T-Shirt",
+      "image": "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/57995812e690273de086fc2623800af8.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "110",
+      "categoryId": "008",
+      "description": "794 reviews 4,8 All reviews are from verified purchases Item reviews (794) Provider reviews (23 868) Small True to size Large 4 % 93 % 3 % avatar aqerlx in  on Jun 26, 2024 Although it is polyester, the blouse is very pleasant to the touch and has a nice material. You don't have to order a larger size because the regular s",
+      "id": "RI1rLSf"
+    },
+    {
+      "name": "Letter Print Crew Neck T-shirt",
+      "image": "https://img.kwcdn.com/product/fancy/0723def8-2a9f-4195-b545-7b78b433e994.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "200",
+      "categoryId": "008",
+      "description": "Letter Print Crew Neck T-shirt, Casual Short Sleeve Top For Spring & Summer, Women's Clothing",
+      "id": "uDPIAet"
+    },
+    {
+      "name": "Moon & Mountain Print Crew Neck T-Shirt",
+      "image": "https://img.kwcdn.com/product/fancy/c2a2c408-cdb9-4885-80e9-5108f9f29692.jpg?imageView2/2/w/800/q/70/format/webp",
+      "price": "110",
+      "categoryId": "008",
+      "description": "240 reviews 4,8 All reviews are from verified purchases Item reviews (240) Provider reviews (6 252) Small True to size Large 1 % 95 % 4 % avatar zo***21 in  on Oct 23, 2024 Super thisrt, loose, sleeves cool, looks like the picture🖤 See more avatar Karina Czarnecka in  on Oct 16, 2024 Super polecam! See more avatar Martyna Cukierska in  on Nov 16, 2024 See more Wannabe Wannabe ",
+      "id": "7ztnm85"
+    },
+    {
+      "name": "t-shirt",
+      "image": "https://img.kwcdn.com/product/open/2024-07-15/1721026009168-8dbed06cc74c456da6353feca8eb503a-goods.jpeg?imageView2/2/w/800/q/70/format/webp",
+      "price": "200",
+      "categoryId": "008",
+      "description": "3 Pcs Men's Loose 100% Cotton Solid T-shirt, Casual Short Sleeve Crew Neck Tee, Men's Clothing For Summer Outdoor",
+      "id": "gEvVNyd"
+    }
+  ],
+  "basket": [
+    {
+      "userId": 1,
+      "productId": "Cf0_6ov",
+      "productImage": "https://img.kwcdn.com/product/fancy/96df86ad-a2e4-4caa-905e-71f3957beef3.jpg?imageView2/2/w/800/q/70/format/webp",
+      "productName": "Men's Hoodies 1 & Sweatshirts",
+      "productPrice": "250",
+      "productDescription": "Men's Mountain Embroidery Graphic Print Sweatshirt, Casual Half Zipper Stand Collar Long Sleeve Top For Outdoor",
+      "id": "2"
+    },
+    {
+      "userId": 1,
+      "productId": "UVJ99Bo",
+      "productImage": "https://img.kwcdn.com/product/fancy/5d7585e0-38c5-42ab-8ac7-077d855b6b1f.jpg?imageView2/2/w/800/q/70/format/webp",
+      "productName": "Skirt",
+      "productPrice": "235",
+      "productDescription": "Elegant Solid Color Button-Detail Suspender Skirt for Women - Polyester, Machine Washable",
+      "id": "3"
+    }
+  ]
+}

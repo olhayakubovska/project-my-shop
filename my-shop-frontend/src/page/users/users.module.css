@@ -1,0 +1,60 @@
+.tableRow {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  align-items: center;
+  font-size: 20px;
+}
+
+.login {
+  width: 100px;
+}
+
+.column {
+  border: 2px solid #fff;
+  padding: 10px;
+  display: flex;
+}
+
+.btn {
+  margin-left: 10px;
+  padding: 5px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.btnUnsaved {
+  margin-left: 10px;
+  padding: 5px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #19446f;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+}

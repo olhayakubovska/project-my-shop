@@ -1,0 +1,93 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #363639;
+  top: 0;
+  height: 90px;
+  padding: 0 30px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.icon i {
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+.loginIcon {
+  font-size: 25px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.loginText {
+  font-size: 23px;
+  transform: translateY(-6%);
+  font-weight: bold;
+  margin-left: -2px;
+  text-align: center;
+}
+
+.controlPanel {
+  display: flex;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.controlPanel i {
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.loginBtn {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 0px 5px;
+  background-color: #989494;
+}
+
+.basket {
+  display: flex;
+  padding: 0 10px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.edit {
+  display: flex;
+  color: #000;
+  text-decoration: none;
+}
+
+.lenghtItems {
+  border-left: 2px solid #000; 
+  padding: 0 5px;
+  font-size: 18px;
+}
+
+.users {
+  display: flex;
+  color: #000;
+  text-decoration: none;
+  margin-right: 13px;
+}

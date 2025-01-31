@@ -1,0 +1,16 @@
+.appColum {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1200px;
+  min-height: 100%;
+  z-index: 1000;
+  margin: 0 auto;
+  position: relative;
+}
+
+.error {
+  color: #fff;
+  font-size: 30px;
+  margin: 100px auto;
+}

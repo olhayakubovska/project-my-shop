@@ -1,0 +1,101 @@
+.productCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+  width: 200px;
+}
+
+.productCard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productImage {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productInfo {
+  padding: 12px;
+  text-align: center;
+}
+
+.productName {
+  font-size: 1.2em;
+  margin: 0;
+  color: #333;
+}
+
+.productPrice {
+  font-size: 1em;
+  color: #666;
+}
+.products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 16px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainSection {
+  display: flex;
+  width: 100%;
+}
+.categories {
+  width: 25%;
+  color: white;
+}
+
+.categoryItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.productsSection {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sorting {
+  margin-left: auto;
+}
+.products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 16px;
+}
+
+.error {
+  color: #d32f2f; /* Красный цвет */
+  /* background-color: #fdecea; Светло-красный фон */
+  padding: 10px 15px;
+  /* border: 1px solid #f5c6cb; */
+  /* border-radius: 4px; */
+  font-size: 14px;
+  margin: 40px 0;
+  font-size: 30px;
+}
+.noProducts {
+  color: rgb(131, 215, 251);
+  text-align: center;
+  margin-top: 40px;
+  font-size: 50px;
+}
