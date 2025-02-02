@@ -11,7 +11,7 @@ export const ProductsCards = ({ id, name, image, price }) => {
         </div>
         <div className={styles.productInfo}>
           <h3 className={styles.productName}>{name}</h3>
-          <div className={styles.productPrice}>{price}грн </div>
+          <div className={styles.productPrice}>{price}$ </div>
         </div>
       </Link>
     </div>
