@@ -5,16 +5,17 @@ const secretKey = "secret";
 
 export const authenticated = async (req, res, next) => {
   const token = req.cookies.token;
+  if (token) {
+    const tokenData = jwt.verify(token, secretKey);
 
-  const tokenData = jwt.verify(token, secretKey);
+    const user = await User.findOne({ _id: tokenData.id });
+    if (!user) {
+      res.send({ error: "user not authenticated" });
+      return;
+    }
 
-  const user = await User.findOne({ _id: tokenData.id });
-  if (!user) {
-    res.send({ error: "user not authenticated" });
-    return;
+    req.user = user;
   }
-
-  req.user = user;
 
   next();
 };
