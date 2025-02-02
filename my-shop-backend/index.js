@@ -25,7 +25,7 @@ import {
   addProductFromBasket,
   getUserProductsFromBasket,
 } from "./controller/basket.controller.js";
-import { basketMap } from "./map/basketMap.js";
+// import { basketMap } from "./map/basketMap.js";
 import { productMap } from "./map/productMap.js";
 import { hasRole } from "./middlewares/hasRole.js";
 import { ROLE } from "./model/role.js";
@@ -34,6 +34,8 @@ const app = express();
 
 app.use(cookieParser());
 app.use(express.json());
+
+app.use(express.static("../my-shop-frontend/build"));
 
 const port = 3001;
 
@@ -151,7 +153,6 @@ app.get("/basket/:userId", async (req, res) => {
 });
 
 app.delete("/basket/:idForRemove", async (req, res) => {
- 
   try {
     const productsFromBasket = await deleteProductFromBasket(
       req.params.idForRemove,
@@ -183,6 +184,10 @@ app.post("/basket", async (req, res) => {
       req.body,
       req.body.userId
     );
+
+    if (userProductsFromBasket.length === 0) {
+      throw new Error("корзина пустая");
+    }
 
     res.send({
       userProductsFromBasket,
