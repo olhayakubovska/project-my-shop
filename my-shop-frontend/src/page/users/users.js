@@ -8,23 +8,18 @@ import { onOpenModal } from "../../reducers/action/on-open-modal";
 import { ACTION_TYPE } from "../../reducers/action/action-type";
 import { setChangeUserAction } from "../../reducers/action/set-change-user-actions";
 import styles from "./users.module.css";
+import { PrivateContent } from "../../components/PrivateContent/PrivateContent";
 
 export const Users = () => {
   const [roles, setRoles] = useState([]);
 
   const [error, setError] = useState("");
-  const usersFromRedax = useSelector((state) => state.users.users);
 
   const dispatch = useDispatch();
 
-  const userRole = useSelector(({ user }) => user.roleId);
+  // const userRole = useSelector(({ user }) => user.roleId);
 
   useEffect(() => {
-    if (userRole !== ROLE.ADMIN) {
-      setError("Доступ только для администраторов.");
-      return;
-    }
-
     const fetchData = async () => {
       try {
         const [loadedUsers, loadedRoles] = await Promise.all([
@@ -32,11 +27,14 @@ export const Users = () => {
           request("/roles"),
         ]);
 
+        if (loadedUsers.error) throw new Error(loadedUsers.error);
+        if (loadedRoles.error) throw new Error(loadedRoles.error);
+
         dispatch(setUsersAction(loadedUsers));
         setRoles(loadedRoles);
       } catch (e) {
-        console.error("Ошибка при загрузке данных:", e.message);
-        setError("Не удалось загрузить данные. Пожалуйста, попробуйте позже.");
+        // console.error("Ошибка при загрузке данных:", e.message);
+        setError("Доступ только у админа");
       }
     };
     fetchData();
@@ -80,12 +78,11 @@ export const Users = () => {
       })
     );
   };
+  const usersFromRedax = useSelector((state) => state.users.users);
 
   return (
     <>
-      {error ? (
-        <div className={styles.error}>{error}</div>
-      ) : (
+      <PrivateContent access={[ROLE.ADMIN]} serverError={error}>
         <div className={styles.container}>
           <h2 className={styles.h2}>Пользователи</h2>
           <div className={styles.tableRow}>
@@ -102,7 +99,7 @@ export const Users = () => {
             ))}
           </div>
         </div>
-      )}
+      </PrivateContent>
     </>
   );
 };

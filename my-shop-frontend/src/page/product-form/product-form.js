@@ -9,6 +9,7 @@ import { onOpenModal } from "../../reducers/action/on-open-modal";
 import { ACTION_TYPE } from "../../reducers/action/action-type";
 import styles from "./productForm.module.css";
 import { setChangeUserAction } from "../../reducers/action/set-change-user-actions";
+import { PrivateContent } from "../../components/PrivateContent/PrivateContent";
 
 export const ProductForm = () => {
   const [productId, setProductId] = useState("");
@@ -26,11 +27,6 @@ export const ProductForm = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (userRole !== ROLE.ADMIN) {
-      setError("Доступ только для администраторов.");
-      return;
-    }
-
     const fetchCategoriesAndProducts = async () => {
       try {
         const fetchedCategories = await request("/categories");
@@ -162,9 +158,7 @@ export const ProductForm = () => {
   const producsFromRedax = useSelector(({ products }) => products.products);
   return (
     <>
-      {error ? (
-        <div className={styles.error}>{error}</div>
-      ) : (
+      <PrivateContent access={[ROLE.ADMIN]} serverError={error}>
         <div className={styles.container}>
           <div className={styles.newProduct}>
             <div className={styles.text}>
@@ -247,7 +241,7 @@ export const ProductForm = () => {
             ))}
           </div>
         </div>
-      )}
+      </PrivateContent>
     </>
   );
 };
