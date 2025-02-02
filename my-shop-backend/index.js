@@ -35,19 +35,19 @@ import path from "path";
 
 const app = express();
 // app.use(cors());
-app.use(cors({ origin: "*" }));  // Разрешаем все домены для теста
+// app.use(cors({ origin: "*" }));  // Разрешаем все домены для теста
 
 // app.use(cors({ origin: "http://localhost:3000" }));
 
-app.use((req, res, next) => {
-  res.set(
-    "Cache-Control",
-    "no-store, no-cache, must-revalidate, proxy-revalidate"
-  );
-  res.set("Pragma", "no-cache");
-  res.set("Expires", "0");
-  next();
-});
+// app.use((req, res, next) => {
+//   res.set(
+//     "Cache-Control",
+//     "no-store, no-cache, must-revalidate, proxy-revalidate"
+//   );
+//   res.set("Pragma", "no-cache");
+//   res.set("Expires", "0");
+//   next();
+// });
 
 app.use(cookieParser());
 app.use(express.json());

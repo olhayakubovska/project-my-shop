@@ -27,7 +27,7 @@ export const Header = () => {
         <Link to="/">
           <img src={HeaderLogo} alt="Header logo" className={styles.logo} />
         </Link>
-        <h1>SHOP</h1>
+        <h1>MY-SHOP</h1>
       </div>
 
       {userRole === ROLE.GUEST ? (
