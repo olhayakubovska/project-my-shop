@@ -10,7 +10,6 @@ import {
   Basket,
   Product,
   ProductForm, 
-  ProductsCards,
   Registration,
   Users,
 } from "./page";
@@ -41,14 +40,14 @@ function App() {
         <Route path="/login" element={<Authorization />} />
         <Route path="/register" element={<Registration />} />
         <Route path="/product/:id" element={<Product />} />
-        <Route path="/product/edit" element={<ProductForm />} />
+        <Route path="/edit" element={<ProductForm />} />
         <Route path="/products/category/:id" element={<ProductsByCategory />} />
         <Route path="/basket" element={<Basket />} />
         <Route path="/users" element={<Users />} />
         <Route
           path="*"
           element={
-            <div className={styles.error}>Такая странрица не сущевствует </div>
+            <div className={styles.error}>Такая страница не существует</div>
           }
         />
       </Routes>

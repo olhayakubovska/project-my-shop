@@ -1,7 +1,8 @@
 export const request = (url, method, body) => {
   return fetch(url, {
-    headers: { "content-type": "application/json" },
-    credentials: "include",
+    headers: {
+      "Content-Type": "application/json",
+    },
 
     method: method || "GET",
     body: body ? JSON.stringify(body) : undefined,

@@ -9,31 +9,34 @@ import { ACTION_TYPE } from "../../reducers/action/action-type";
 import { setChangeUserAction } from "../../reducers/action/set-change-user-actions";
 import styles from "./users.module.css";
 import { PrivateContent } from "../../components/PrivateContent/PrivateContent";
+import { checkAccess } from "../../check-access";
 
 export const Users = () => {
   const [roles, setRoles] = useState([]);
+  const [displayUsers, setUsers] = useState([]);
 
   const [error, setError] = useState("");
 
   const dispatch = useDispatch();
 
-  // const userRole = useSelector(({ user }) => user.roleId);
-
   useEffect(() => {
+    // if (!checkAccess([ROLE.ADMIN], userRole)) {
+    //   return;
+    // }
     const fetchData = async () => {
       try {
-        const [loadedUsers, loadedRoles] = await Promise.all([
+        const [users, loadedRoles] = await Promise.all([
           request("/users"),
           request("/roles"),
         ]);
 
-        if (loadedUsers.error) throw new Error(loadedUsers.error);
+        console.log(users, "loadedUsers");
+        if (users.error) throw new Error(users.error);
         if (loadedRoles.error) throw new Error(loadedRoles.error);
-
-        dispatch(setUsersAction(loadedUsers));
+        dispatch(setUsersAction(users));
         setRoles(loadedRoles);
       } catch (e) {
-        // console.error("Ошибка при загрузке данных:", e.message);
+        console.error("Ошибка при загрузке данных:", e.message);
         setError("Доступ только у админа");
       }
     };

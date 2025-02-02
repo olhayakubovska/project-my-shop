@@ -66,7 +66,7 @@ export const ProductForm = () => {
         onConfirm: async () => {
           try {
             const changedProducts = await request(
-              `/product/edit/${id}`,
+              `/edit/${id}`,
               "PATCH",
               { name, image, price, categoryId, description }
             );
@@ -97,7 +97,7 @@ export const ProductForm = () => {
         text: "Сохранить новый продукт?",
         onConfirm: async () => {
           try {
-            const newProducts = await request("/product/edit", "POST", {
+            const newProducts = await request("/edit", "POST", {
               name,
               image,
               price,
@@ -131,7 +131,7 @@ export const ProductForm = () => {
         onConfirm: async () => {
           try {
             const uptadedProducts = await request(
-              `/product/edit/${productId}`,
+              `/edit/${productId}`,
               "DELETE"
             );
             dispatch(setChangeUserAction(uptadedProducts));

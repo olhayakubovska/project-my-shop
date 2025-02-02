@@ -29,13 +29,32 @@ import {
 import { productMap } from "./map/productMap.js";
 import { hasRole } from "./middlewares/hasRole.js";
 import { ROLE } from "./model/role.js";
+import cors from "cors";
+import path from "path";
+
 
 const app = express();
+// app.use(cors());
+app.use(cors({ origin: "*" }));  // Разрешаем все домены для теста
+
+// app.use(cors({ origin: "http://localhost:3000" }));
+
+app.use((req, res, next) => {
+  res.set(
+    "Cache-Control",
+    "no-store, no-cache, must-revalidate, proxy-revalidate"
+  );
+  res.set("Pragma", "no-cache");
+  res.set("Expires", "0");
+  next();
+});
 
 app.use(cookieParser());
 app.use(express.json());
 
 app.use(express.static("../my-shop-frontend/build"));
+// const __dirname = path.resolve();
+// app.use(express.static(path.join(__dirname, "my-shop-frontend", "build")));
 
 const port = 3001;
 
@@ -257,7 +276,7 @@ app.delete("/users/:userId", hasRole([ROLE.ADMIN]), async (req, res) => {
   }
 });
 
-app.post("/product/edit", hasRole([ROLE.ADMIN]), async (req, res) => {
+app.post("/edit", hasRole([ROLE.ADMIN]), async (req, res) => {
   try {
     const products = await addProduct(req.body);
     res.status(200).send(products);
@@ -269,23 +288,19 @@ app.post("/product/edit", hasRole([ROLE.ADMIN]), async (req, res) => {
   }
 });
 
-app.post(
-  "/products/edit/:productId",
-  hasRole([ROLE.ADMIN]),
-  async (req, res) => {
-    try {
-      const products = await deleteProduct(req.params.productId);
-      res.status(200).send(products);
-    } catch (e) {
-      console.error("Ошибка при удалении продукта:", e.message);
-      res.status(500).send({
-        error: "Произошла ошибка при удалении продукта.",
-      });
-    }
+app.post("/edit/:productId", hasRole([ROLE.ADMIN]), async (req, res) => {
+  try {
+    const products = await deleteProduct(req.params.productId);
+    res.status(200).send(products);
+  } catch (e) {
+    console.error("Ошибка при удалении продукта:", e.message);
+    res.status(500).send({
+      error: "Произошла ошибка при удалении продукта.",
+    });
   }
-);
+});
 
-app.patch("/product/edit/:id", hasRole([ROLE.ADMIN]), async (req, res) => {
+app.patch("/edit/:id", hasRole([ROLE.ADMIN]), async (req, res) => {
   try {
     const changedProducts = await updateProduct(req.params.id, req.body);
     res.status(200).send(changedProducts);
@@ -297,21 +312,27 @@ app.patch("/product/edit/:id", hasRole([ROLE.ADMIN]), async (req, res) => {
   }
 });
 
-app.delete(
-  "/product/edit/:productId",
-  hasRole([ROLE.ADMIN]),
-  async (req, res) => {
-    try {
-      const changedProducts = await deleteProduct(req.params.productId);
-      res.status(200).send(changedProducts);
-    } catch (e) {
-      console.error("Ошибка при удалении продукта:", e.message);
-      res.status(500).send({
-        error: "Произошла ошибка при удалении продукта.",
-      });
-    }
+app.delete("/edit/:productId", hasRole([ROLE.ADMIN]), async (req, res) => {
+  try {
+    const changedProducts = await deleteProduct(req.params.productId);
+    res.status(200).send(changedProducts);
+  } catch (e) {
+    console.error("Ошибка при удалении продукта:", e.message);
+    res.status(500).send({
+      error: "Произошла ошибка при удалении продукта.",
+    });
   }
-);
+});
+app.get("/edit", hasRole([ROLE.ADMIN]), async (req, res) => {
+  try {
+    const products = await getProducts();
+    res.send({ products, error: undefined });
+  } catch (e) {
+    res.status(500).send({
+      error: "Произошла ошибка при загрузке данных ;( Попробуйте еще раз",
+    });
+  }
+});
 
 mongoose
   .connect(

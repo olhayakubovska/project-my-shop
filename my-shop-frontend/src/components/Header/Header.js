@@ -60,7 +60,7 @@ export const Header = () => {
                 <i className="fa fa-users" aria-hidden="true" />
               </div>
             </Link>
-            <Link to={`/product/edit`}>
+            <Link to={`/edit`}>
               <div className={styles.edit}>
                 <i className="fa fa-pencil" aria-hidden="true"></i>
               </div>
