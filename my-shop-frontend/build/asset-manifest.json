@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.33e0bd38.css",
-    "main.js": "/static/js/main.88ccb3ca.js",
+    "main.js": "/static/js/main.cc73c858.js",
     "static/media/free-icon-cymric-cat-15370486.png": "/static/media/free-icon-cymric-cat-15370486.1cd3ea70fa0261082afd.png",
     "static/media/free-icon-bombay-15370478.png": "/static/media/free-icon-bombay-15370478.12384379443fd657e1e3.png",
     "index.html": "/index.html",
     "main.33e0bd38.css.map": "/static/css/main.33e0bd38.css.map",
-    "main.88ccb3ca.js.map": "/static/js/main.88ccb3ca.js.map"
+    "main.cc73c858.js.map": "/static/js/main.cc73c858.js.map"
   },
   "entrypoints": [
     "static/css/main.33e0bd38.css",
-    "static/js/main.88ccb3ca.js"
+    "static/js/main.cc73c858.js"
   ]
 }
