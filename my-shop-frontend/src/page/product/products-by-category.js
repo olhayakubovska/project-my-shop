@@ -111,7 +111,7 @@ export const ProductsByCategory = () => {
                           <div className={styles.productInfo}>
                             <h3 className={styles.productName}>{name}</h3>
                             <div className={styles.productPrice}>
-                              {price} грн
+                              {price} $
                             </div>
                           </div>
                         </Link>

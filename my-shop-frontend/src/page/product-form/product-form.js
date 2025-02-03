@@ -10,6 +10,7 @@ import { ACTION_TYPE } from "../../reducers/action/action-type";
 import styles from "./productForm.module.css";
 import { setChangeUserAction } from "../../reducers/action/set-change-user-actions";
 import { PrivateContent } from "../../components/PrivateContent/PrivateContent";
+import { changeProductsAction } from "../../reducers/action/change-products-action";
 
 export const ProductForm = () => {
   const [productId, setProductId] = useState("");
@@ -65,12 +66,16 @@ export const ProductForm = () => {
         text: "Сохранить изменения?",
         onConfirm: async () => {
           try {
-            const changedProducts = await request(
-              `/edit/${id}`,
-              "PATCH",
-              { name, image, price, categoryId, description }
-            );
-            dispatch(setChangeUserAction(changedProducts));
+            const changedProducts = await request(`/edit/${id}`, "PATCH", {
+              name,
+              image,
+              price,
+              categoryId,
+              description,
+            });
+            // console.log(changedProducts, "newProducts");
+
+            dispatch(changeProductsAction(changedProducts));
           } catch (error) {
             console.error("Ошибка при обновлении продукта:", error);
             setError("Ошибка при обновлении продукта");
@@ -104,7 +109,9 @@ export const ProductForm = () => {
               categoryId,
               description,
             });
-            dispatch(setChangeUserAction(newProducts));
+            const reversedProducts = newProducts.reverse();
+
+            dispatch(changeProductsAction(reversedProducts));
           } catch (error) {
             console.error("Ошибка при добавлении продукта:", error);
             setError("Ошибка при обновлении продукта");
@@ -134,7 +141,7 @@ export const ProductForm = () => {
               `/edit/${productId}`,
               "DELETE"
             );
-            dispatch(setChangeUserAction(uptadedProducts));
+            dispatch(changeProductsAction(uptadedProducts));
             setProductdName("");
             setProductPrice("");
             setProductImage("");

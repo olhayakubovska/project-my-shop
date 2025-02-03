@@ -32,7 +32,6 @@ import { ROLE } from "./model/role.js";
 import cors from "cors";
 import path from "path";
 
-
 const app = express();
 // app.use(cors());
 // app.use(cors({ origin: "*" }));  // Разрешаем все домены для теста

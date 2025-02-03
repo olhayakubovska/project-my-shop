@@ -14,9 +14,7 @@ export const productsReducer = (state = initialStateProducts, action) => {
 
     case ACTION_TYPE.SET_CHANGE_PRODUCTS:
       return {
-        ...state,
         products: action.payload,
-
       };
 
     default:
